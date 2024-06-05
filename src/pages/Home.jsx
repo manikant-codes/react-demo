@@ -1,11 +1,12 @@
 import React from "react";
-import Navbar from "../components/home/Navbar";
 import HeroImage from "../components/home/HeroImage";
+import Footer from "../components/home/Footer";
+import "../styles/home/home.css";
 
 function Home() {
   return (
     <div>
-      <Navbar />
+      <Footer />
       <HeroImage />
     </div>
   );
