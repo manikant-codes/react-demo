@@ -1,0 +1,12 @@
+.container {
+  background-color: blue;
+  color: white;
+  display: flex;
+  gap: 16px;
+  padding: 16px 32px;
+  font-size: 16px;
+}
+
+p {
+  margin: 0px;
+}
