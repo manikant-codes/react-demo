@@ -1,10 +1,13 @@
 .container {
-  background-color: black;
+  background-color: blue;
   color: white;
   display: flex;
   gap: 16px;
   padding: 16px 32px;
   font-size: 16px;
+}
+
+.links {
 }
 
 p {
