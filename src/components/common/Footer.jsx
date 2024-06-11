@@ -2,13 +2,12 @@ import React from "react";
 import styles from "../../styles/common/footer.module.css";
 
 function Footer() {
-  console.log("styles", styles);
   return (
-    <footer className={styles.container}>
+    <footer className="h-[100px] bg-violet-950 text-[#bdbdbd] p-[32px] flex justify-between">
       <div>
-        <p></p>
+        <p>&copy; 2024 My Website</p>
       </div>
-      <div className={styles.links}>
+      <div className="flex gap-4">
         <p>privacy</p>
         <p>contact</p>
       </div>
