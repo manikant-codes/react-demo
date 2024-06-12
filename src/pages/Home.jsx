@@ -1,20 +1,13 @@
 import React from "react";
-import Footer from "../components/common/Footer";
-import Navbar from "../components/common/Navbar";
-import CompaniesLogos from "../components/home/CompaniesLogos";
-import HeroImage from "../components/home/HeroImage";
-import AboutRow from "../components/home/AboutRow";
-import StoryRow from "../components/home/StoryRow";
+import Navbar from "../layouts/Navbar";
+import Footer from "../layouts/Footer";
+import PostsList from "../components/home/PostsList";
 
 function Home() {
   return (
     <div>
       <Navbar />
-      <HeroImage />
-      <CompaniesLogos />
-      <AboutRow />
-      <StoryRow />
-
+      <PostsList />
       <Footer />
     </div>
   );
