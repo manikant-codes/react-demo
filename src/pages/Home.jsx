@@ -1,18 +1,20 @@
 import React from "react";
-import HeroImage from "../components/home/HeroImage";
 import Footer from "../components/common/Footer";
-// import "../styles/home/home.css";
-import styles from "../styles/home/home.module.css";
+import Navbar from "../components/common/Navbar";
+import CompaniesLogos from "../components/home/CompaniesLogos";
+import HeroImage from "../components/home/HeroImage";
+import AboutRow from "../components/home/AboutRow";
+import StoryRow from "../components/home/StoryRow";
 
 function Home() {
-  console.log("styles home", styles);
   return (
-    <div
-      style={{
-        backgroundColor: "red",
-      }}
-    >
+    <div>
+      <Navbar />
       <HeroImage />
+      <CompaniesLogos />
+      <AboutRow />
+      <StoryRow />
+
       <Footer />
     </div>
   );

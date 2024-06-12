@@ -10,7 +10,7 @@ function HeroImage() {
         // style={{ height: "80vh", width: "100%", objectFit: "cover" }}
         loop
         preLoad="auto"
-        // controls
+        controls
         className="h-[100vh] lg:h-[80vh] w-full object-cover"
       >
         Video
