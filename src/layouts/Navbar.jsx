@@ -1,13 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="flex justify-between p-8 bg-indigo-900 text-white items-center">
       <h1 className="text-2xl font-bold">fetch API</h1>
       <ul className="flex gap-4">
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/useEffect">useEffect</Link>
+        </li>
       </ul>
     </nav>
   );
