@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "../../styles/common/footer.module.css";
 
 function Footer() {
   return (
-    <footer className="h-[100px] bg-slate-950 text-[#bdbdbd] p-[32px] flex justify-between">
+    <footer className="bg-slate-950 text-[#bdbdbd] px-8 py-6 flex justify-between">
       <div>
         <p>&copy; 2024 My Website</p>
       </div>
