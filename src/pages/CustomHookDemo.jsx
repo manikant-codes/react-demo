@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
-import PostCard from "../components/common/PostCard";
+import React from "react";
+import TodoCard from "../components/customHookDemo/TodoCard";
 import useFetch from "../customHooks/useFetch";
 import useScroll from "../customHooks/useScroll";
 
-function UseEffectDemo() {
-  const posts = useFetch("https://jsonplaceholder.typicode.com/posts");
+function CustomHookDemo() {
+  const todos = useFetch("https://jsonplaceholder.typicode.com/todos");
   const [scroll, moveToTop] = useScroll();
 
-  if (!posts) return null;
+  if (!todos) return null;
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-8 gap-8">
-      {posts?.map((post, index) => {
-        return <PostCard key={post.id} post={post} />;
+      {todos?.map((todo, index) => {
+        return <TodoCard key={todo.id} todo={todo} />;
       })}
       {scroll > 4000 && (
         <button
@@ -26,4 +26,4 @@ function UseEffectDemo() {
   );
 }
 
-export default UseEffectDemo;
+export default CustomHookDemo;

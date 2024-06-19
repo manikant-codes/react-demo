@@ -12,6 +12,9 @@ function Navbar() {
         <li>
           <Link to="/useEffect">useEffect</Link>
         </li>
+        <li>
+          <Link to="/customHook">customHook</Link>
+        </li>
       </ul>
     </nav>
   );
