@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../common/Title";
+import Title from "../../common/Title";
 import ServicesRowCard from "./ServicesRowCard";
 
 function ServicesRow() {
