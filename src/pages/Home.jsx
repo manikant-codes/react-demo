@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../components/common/Footer";
 import HeroImage from "../components/home/HeroImage";
 import Navbar from "../components/common/Navbar";
-import InfoRow from "../components/home/InfoRow";
+import InfoRow from "../components/home/infoRow/InfoRow";
 import ServicesRow from "../components/home/servicesRow/ServicesRow";
 import PricingRow from "../components/home/pricingRow/PricingRow";
 
