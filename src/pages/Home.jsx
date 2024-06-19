@@ -4,6 +4,8 @@ import HeroImage from "../components/home/HeroImage";
 import Navbar from "../components/common/Navbar";
 import InfoRow from "../components/home/InfoRow";
 import ServicesRow from "../components/home/servicesRow/ServicesRow";
+import PricingRow from "../components/home/pricingRow/PricingRow";
+import ProgressRow from "../components/home/progressRow/ProgressRow";
 
 function Home() {
   const showOurStory = true;
@@ -30,7 +32,9 @@ function Home() {
             dolore! Aut sint quasi voluptatibus magnam."
         />
       )}
+      <ProgressRow />
       <ServicesRow />
+      <PricingRow />
       <Footer />
     </div>
   );
