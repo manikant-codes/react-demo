@@ -15,6 +15,9 @@ function Navbar() {
         <li>
           <Link to="/customHook">customHook</Link>
         </li>
+        <li>
+          <Link to="/memo">memo</Link>
+        </li>
       </ul>
     </nav>
   );

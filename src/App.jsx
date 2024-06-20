@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Layout from "./layouts/Layout";
 import UseEffectDemo from "./pages/UseEffectDemo";
 import CustomHookDemo from "./pages/CustomHookDemo";
+import Memo from "./pages/Memo";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="useEffect" element={<UseEffectDemo />} />
           <Route path="customHook" element={<CustomHookDemo />} />
+          <Route path="memo" element={<Memo />} />
         </Route>
       </Routes>
     </BrowserRouter>
