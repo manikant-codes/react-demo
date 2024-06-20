@@ -6,6 +6,9 @@ import InfoRow from "../components/home/InfoRow";
 import ServicesRow from "../components/home/servicesRow/ServicesRow";
 import PricingRow from "../components/home/pricingRow/PricingRow";
 import ProgressRow from "../components/home/progressRow/ProgressRow";
+import ServicesRowMap from "../components/home/servicesRow/ServicesRowMap";
+import ProgressRowMap from "../components/home/progressRow/ProgressRowMap";
+import PricingRowMap from "../components/home/pricingRow/PricingRowMap";
 
 function Home() {
   const showOurStory = true;
@@ -32,9 +35,9 @@ function Home() {
             dolore! Aut sint quasi voluptatibus magnam."
         />
       )}
-      <ProgressRow />
-      <ServicesRow />
-      <PricingRow />
+      <ProgressRowMap />
+      <ServicesRowMap />
+      <PricingRowMap />
       <Footer />
     </div>
   );
