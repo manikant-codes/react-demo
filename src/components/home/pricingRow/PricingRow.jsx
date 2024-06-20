@@ -10,36 +10,48 @@ function PricingRow() {
         <PricingRowCard
           title="Free Plan"
           price={0}
-          features={{
-            1: true,
-            2: true,
-            3: true,
-            4: false,
-            5: false,
-          }}
+          // features={{
+          //   one: true,
+          //   two: true,
+          //   three: true,
+          //   four: false,
+          //   five: false,
+          // }}
+          one
+          two
+          three
         />
         <PricingRowCard
           title="Business Plan"
           price={29}
-          features={{
-            1: true,
-            2: true,
-            3: true,
-            4: true,
-            5: false,
-          }}
           active
+          // features={{
+          //   one: true,
+          //   two: true,
+          //   three: true,
+          //   four: true,
+          //   five: false,
+          // }}
+          one
+          two
+          three
+          four
         />
         <PricingRowCard
           title="Developer Plan"
           price={49}
-          features={{
-            1: true,
-            2: true,
-            3: true,
-            4: true,
-            5: true,
-          }}
+          // features={{
+          //   one: true,
+          //   two: true,
+          //   three: true,
+          //   four: true,
+          //   five: true,
+          // }}
+          one
+          two
+          three
+          four
+          five
         />
       </div>
     </div>

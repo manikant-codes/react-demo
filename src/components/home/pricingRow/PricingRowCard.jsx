@@ -3,12 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 function PricingRowCard(props) {
+  console.log("props", props);
   return (
-    <div
-      className={`bg-indigo-100 p-8 rounded flex flex-col gap-6 ${
-        props.active ? "border-t-4 border-indigo-600" : ""
-      }`}
-    >
+    <div className={`bg-indigo-100 p-8 rounded flex flex-col gap-6`}>
       <h3 className="text-xl font-bold text-indigo-500">{props.title}</h3>
       <div>
         <p>
@@ -19,71 +16,66 @@ function PricingRowCard(props) {
           <span>/month</span>
         </p>
       </div>
-      <ul>
+      <ul className="flex flex-col gap-2">
         <li
-          className={`flex gap-2 items-center ${
-            props.features[1] ? "" : "line-through"
+          className={`flex items-center gap-2  ${
+            props.one ? "" : "line-through"
           }`}
         >
+          {/* <FontAwesomeIcon icon={props.features.one ? faCheck : faXmark} /> */}
           <FontAwesomeIcon
-            icon={props.features[1] ? faCheck : faXmark}
-            className={`${
-              props.features[1] ? "text-green-600" : "text-red-600"
-            }`}
+            icon={props.one ? faCheck : faXmark}
+            className={`${props.one ? "text-green-600" : "text-red-600"}`}
           />
-          Quam adipiscing vitae proin
+          <p>Quam adipiscing vitae proin</p>
         </li>
         <li
-          className={`flex gap-2 items-center ${
-            props.features[2] ? "" : "line-through"
+          className={`flex items-center gap-2  ${
+            props.two ? "" : "line-through"
           }`}
         >
+          {/* <FontAwesomeIcon icon={props.features.two ? faCheck : faXmark} /> */}
           <FontAwesomeIcon
-            icon={props.features[2] ? faCheck : faXmark}
-            className={`${
-              props.features[2] ? "text-green-600" : "text-red-600"
-            }`}
+            icon={props.two ? faCheck : faXmark}
+            className={`${props.two ? "text-green-600" : "text-red-600"}`}
           />
-          Nec feugiat nisl pretium
+          <p>Quam adipiscing vitae proin</p>
         </li>
         <li
-          className={`flex gap-2 items-center ${
-            props.features[3] ? "" : "line-through"
+          className={`flex items-center gap-2  ${
+            props.three ? "" : "line-through"
           }`}
         >
+          {/* <FontAwesomeIcon icon={props.features.three ? faCheck : faXmark} /> */}
           <FontAwesomeIcon
-            icon={props.features[3] ? faCheck : faXmark}
-            className={`${
-              props.features[3] ? "text-green-600" : "text-red-600"
-            }`}
+            icon={props.three ? faCheck : faXmark}
+            className={`${props.three ? "text-green-600" : "text-red-600"}`}
           />
-          Nulla at volutpat diam uteera
+          <p>Quam adipiscing vitae proin</p>
         </li>
         <li
-          className={`flex gap-2 items-center ${
-            props.features[4] ? "" : "line-through"
+          className={`flex items-center gap-2  ${
+            props.four ? "" : "line-through"
           }`}
         >
+          {/* <FontAwesomeIcon icon={props.features.four ? faCheck : faXmark} /> */}
           <FontAwesomeIcon
-            icon={props.features[4] ? faCheck : faXmark}
-            className={`${
-              props.features[4] ? "text-green-600" : "text-red-600"
-            }`}
+            icon={props.four ? faCheck : faXmark}
+            className={`${props.four ? "text-green-600" : "text-red-600"}`}
           />
-          Pharetra massa massa ultricies
+          <p>Quam adipiscing vitae proin</p>
         </li>
         <li
-          className={`flex gap-2 items-center ${
-            props.features[5] ? "" : "line-through"
+          className={`flex items-center gap-2  ${
+            props.five ? "" : "line-through"
           }`}
         >
+          {/* <FontAwesomeIcon icon={props.features.five ? faCheck : faXmark} /> */}
           <FontAwesomeIcon
-            icon={props.features[5] ? faCheck : faXmark}
-            className={`${
-              props.features[5] ? "text-green-600" : "text-red-600"
-            }`}
+            icon={props.five ? faCheck : faXmark}
+            className={`${props.five ? "text-green-600" : "text-red-600"}`}
           />
-          Massa ultricies mi quis hendrerit
+          <p>Quam adipiscing vitae proin</p>
         </li>
       </ul>
       <button className="bg-indigo-500 text-white px-4 py-2 rounded-full hover:bg-indigo-700 w-fit">
