@@ -1,24 +1,54 @@
 import React from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 function HeroImage() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // autoplay: true,
+  };
   return (
-    <div style={{ position: "relative" }}>
-      <video
-        src="/images/hero-video.mp4"
-        autoPlay
-        loop
-        muted
-        type="video/mp4"
-        className="h-[100vh] lg:h-[80vh] w-full object-cover"
-      />
-
-      <div className="animate-[mybounce_1s_cubic-bezier(0,.68,.62,.95)_0s_infinite_alternate] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-center">
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-          itaque.
+    <div className="relative h-[calc(100vh-88px)] overflow-hidden">
+      <div className="absolute top-[50%] left-[50%] text-white z-[100] translate-x-[-50%] translate-y-[-50%]">
+        <h2 className="text-6xl mb-4">Lorem Ipsum</h2>
+        <p className="text-lg">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          similique illum rem fugit earum asperiores magni quisquam porro
+          laborum exercitationem maiores libero tempora ex quasi mollitia esse,
+          animi labore ratione!
         </p>
       </div>
+      <Slider {...settings}>
+        <div className="h-[calc(100vh-88px)] relative">
+          <div className="absolute top-0 left-0 right-0 bottom-0 bg-slate-950 opacity-50 z-[100]" />
+          <img
+            src="https://images.unsplash.com/photo-1616702678571-ee1b5c405cc6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className="h-full relative">
+          <div className="absolute top-0 left-0 right-0 bottom-0 bg-slate-950 opacity-50 z-[100]" />
+          <img
+            src="https://images.unsplash.com/photo-1469755785741-720ca0c526a6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className="h-full relative">
+          <div className="absolute top-0 left-0 right-0 bottom-0 bg-slate-950 opacity-50 z-[100]" />
+          <img
+            src="https://images.unsplash.com/photo-1500087326943-dcabb70c026f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            className="h-full w-full object-cover"
+          />
+        </div>
+      </Slider>
     </div>
   );
 }

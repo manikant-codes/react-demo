@@ -41,6 +41,22 @@ function InfoRow(props) {
   //   </div>
   // );
 
+  function showAlert(e) {
+    const myPara = document.getElementById("my-para");
+    // const paraContainer = document.getElementById("para-container");
+
+    // const newPara = document.createElement("p");
+    // newPara.innerText = "New Paragraph";
+
+    // paraContainer.appendChild(newPara);
+
+    if (myPara.style.display === "none") {
+      myPara.style.display = "block";
+    } else {
+      myPara.style.display = "none";
+    }
+  }
+
   return (
     <>
       {props.imageFirst ? (
@@ -55,8 +71,18 @@ function InfoRow(props) {
               />
             </div>
             <div>
-              <p className="text-xl mb-8">{props.desc}</p>
-              <button className="bg-indigo-600 px-6 py-3 rounded-full text-white hover:bg-indigo-800">
+              <div id="para-container">
+                <p id="my-para" className="text-xl mb-8">
+                  {props.desc}
+                </p>
+              </div>
+              <button
+                onclick="showAlert()"
+                onClick={function (e) {
+                  showAlert();
+                }}
+                className="bg-indigo-600 px-6 py-3 rounded-full text-white hover:bg-indigo-800"
+              >
                 Know More
               </button>
             </div>
