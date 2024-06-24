@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 
 function Todos(props) {
-  console.log("todos");
+
   return (
     <div>
       <h2 className="text-xl font-bold text-indigo-700">Todos</h2>

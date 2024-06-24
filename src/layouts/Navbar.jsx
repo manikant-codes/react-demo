@@ -18,6 +18,9 @@ function Navbar() {
         <li>
           <Link to="/memo">memo</Link>
         </li>
+        <li>
+          <Link to="/useMemo">useMemo</Link>
+        </li>
       </ul>
     </nav>
   );
