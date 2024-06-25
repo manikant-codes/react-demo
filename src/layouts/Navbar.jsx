@@ -21,6 +21,9 @@ function Navbar() {
         <li>
           <Link to="/useMemo">useMemo</Link>
         </li>
+        <li>
+          <Link to="/useRef">useRef</Link>
+        </li>
       </ul>
     </nav>
   );

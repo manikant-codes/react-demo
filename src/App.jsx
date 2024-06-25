@@ -5,6 +5,7 @@ import UseEffectDemo from "./pages/UseEffectDemo";
 import CustomHookDemo from "./pages/CustomHookDemo";
 import Memo from "./pages/Memo";
 import UseMemoDemo from "./pages/UseMemoDemo";
+import UseRefDemo from "./pages/UseRefDemo";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="customHook" element={<CustomHookDemo />} />
           <Route path="memo" element={<Memo />} />
           <Route path="useMemo" element={<UseMemoDemo />} />
+          <Route path="useRef" element={<UseRefDemo />} />
         </Route>
       </Routes>
     </BrowserRouter>
