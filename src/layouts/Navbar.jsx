@@ -24,6 +24,9 @@ function Navbar() {
         <li>
           <Link to="/useRef">useRef</Link>
         </li>
+        <li>
+          <Link to="/useContext">useContext</Link>
+        </li>
       </ul>
     </nav>
   );
