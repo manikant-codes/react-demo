@@ -2,7 +2,31 @@ import React from "react";
 import Title from "../../common/Title";
 import ProgressBar from "./ProgressBar";
 
+const data = [
+  { title: "HTML", percentage: 100 },
+  { title: "CSS", percentage: 80 },
+  { title: "JS", percentage: 70 },
+  { title: "React", percentage: 60 },
+];
+
+// const elements = [
+//   <ProgressBar key={0} title="HTML" percentage={100} />,
+//   <ProgressBar key={1} title="CSS" percentage={80} />,
+//   <ProgressBar key={2} title="JS" percentage={70} />,
+//   <ProgressBar key={3} title="React" percentage={60} />,
+// ];
+
 function ProgressRow() {
+  // const elements = data.map(function (value, index) {
+  //   return (
+  //     <ProgressBar
+  //       key={index}
+  //       title={value.title}
+  //       percentage={value.percentage}
+  //     />
+  //   );
+  // });
+
   return (
     <div className="p-8 grid grid-cols-1 md:grid-cols-2 gap-4">
       <div>
@@ -20,11 +44,22 @@ function ProgressRow() {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
 
-        <div className="flex flex-col gap-2">
+        {/* <div className="flex flex-col gap-2">
           <ProgressBar title="HTML" percentage={100} />
           <ProgressBar title="CSS" percentage={80} />
           <ProgressBar title="JS" percentage={70} />
           <ProgressBar title="React" percentage={60} />
+        </div> */}
+        <div className="flex flex-col gap-2">
+          {data.map(function (value, index) {
+            return (
+              <ProgressBar
+                key={index}
+                title={value.title}
+                percentage={value.percentage}
+              />
+            );
+          })}
         </div>
       </div>
     </div>

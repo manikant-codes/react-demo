@@ -1,17 +1,15 @@
 import React from "react";
 
 function Map() {
-  //   const data = [1, 2, 3, 4, 5];
+  const data = [1, 2, 3, 4, 5];
 
-  const data = [
-    { id: 1, name: "Manikant" },
-    { id: 2, name: "Hiren" },
-    { id: 3, name: "Krish" },
-    { id: 4, name: "Keval" },
-    { id: 5, name: "Vihar" },
-  ];
-
-  const colors = ["red", "green", "indigo", "cyan", "orange"];
+  // const data = [
+  //   { id: 1, name: "Manikant" },
+  //   { id: 2, name: "Hiren" },
+  //   { id: 3, name: "Krish" },
+  //   { id: 4, name: "Keval" },
+  //   { id: 5, name: "Vihar" },
+  // ];
 
   //   const listItems = [
   //     <li className="bg-indigo-200 p-4 rounded-lg">1</li>,
@@ -23,7 +21,7 @@ function Map() {
 
   const listItems = data.map((value, index) => {
     return (
-      <li className={`bg-${colors[index]}-200 p-4 rounded-lg`}>
+      <li className={`bg-indigo-200 p-4 rounded-lg`}>
         <p className="flex items-center gap-4">
           <span className="font-bold">{value.id}.</span>{" "}
           <span>{value.name}</span>
