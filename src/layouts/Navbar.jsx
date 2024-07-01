@@ -27,6 +27,12 @@ function Navbar() {
         <li>
           <Link to="/useContext">useContext</Link>
         </li>
+        <li>
+          <Link to="/useReducer">useReducer</Link>
+        </li>
+        <li>
+          <Link to="/useReducerTodos">useReducerTodos</Link>
+        </li>
       </ul>
     </nav>
   );

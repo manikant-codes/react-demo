@@ -7,6 +7,8 @@ import Memo from "./pages/Memo";
 import UseMemoDemo from "./pages/UseMemoDemo";
 import UseRefDemo from "./pages/UseRefDemo";
 import UseContextDemo from "./pages/UseContextDemo";
+import UseReducerDemo from "./pages/UseReducerDemo";
+import UseReducerTodos from "./pages/UseReducerTodos";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="useMemo" element={<UseMemoDemo />} />
           <Route path="useRef" element={<UseRefDemo />} />
           <Route path="useContext" element={<UseContextDemo />} />
+          <Route path="useReducer" element={<UseReducerDemo />} />
+          <Route path="useReducerTodos" element={<UseReducerTodos />} />
         </Route>
       </Routes>
     </BrowserRouter>
