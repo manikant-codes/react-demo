@@ -1,10 +1,9 @@
-import Map from "./components/demo/Map";
-import Home from "./pages/Home";
+import Conditional from "./pages/Conditional";
 
 function App() {
   return (
     <>
-      <Home />
+      <Conditional />
     </>
   );
 }
