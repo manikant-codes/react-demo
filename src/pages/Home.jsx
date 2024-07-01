@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "../components/common/Footer";
+import Footer from "../layouts/Footer";
 import HeroImage from "../components/home/HeroImage";
-import Navbar from "../components/common/Navbar";
+import Navbar from "../layouts/Navbar";
 import InfoRow from "../components/home/InfoRow";
 import ServicesRow from "../components/home/servicesRow/ServicesRow";
 import PricingRow from "../components/home/pricingRow/PricingRow";
@@ -14,9 +14,12 @@ import CounterRow from "../components/home/counterRow/CounterRow";
 function Home() {
   const showOurStory = true;
   return (
-    <div>
-      <Navbar />
-      <HeroImage />
+    <>
+      <HeroImage
+        title="Indigo"
+        img="https://images.unsplash.com/photo-1616702678571-ee1b5c405cc6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, minima!"
+      />
       <InfoRow
         title="About Us"
         img="https://images.unsplash.com/photo-1527067829737-402993088e6b?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -40,8 +43,7 @@ function Home() {
       <CounterRow />
       <ServicesRow />
       <PricingRow />
-      <Footer />
-    </div>
+    </>
   );
 }
 
