@@ -33,6 +33,9 @@ function Navbar() {
         <li>
           <Link to="/useReducerTodos">useReducerTodos</Link>
         </li>
+        <li>
+          <Link to="/redux">Redux</Link>
+        </li>
       </ul>
     </nav>
   );

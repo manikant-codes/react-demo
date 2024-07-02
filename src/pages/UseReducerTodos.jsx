@@ -4,6 +4,13 @@ function reducer(state, action) {
   if (action.type === "ADD") {
     return [...state, action.payload];
   } else if (action.type === "UPDATE") {
+    const newArray = state.map((todo) => {
+      if (todo.id === action.payload) {
+        return { ...todo, isCompleted: !todo.isCompleted };
+      }
+      return todo;
+    });
+    return newArray;
   } else if (action.type === "DELETE") {
     const newArray = state.filter((todo) => {
       if (todo.id === action.payload) {
@@ -41,6 +48,11 @@ function UseReducerTodos() {
         task: task,
       },
     });
+    setTask("");
+  }
+
+  function handleUpdate(id) {
+    dispatch({ type: "UPDATE", payload: id });
   }
 
   function handleDelete(id) {
@@ -53,6 +65,7 @@ function UseReducerTodos() {
         <input
           className="border border-indigo-500 rounded-lg py-2 px-4 grow-[1]"
           type="text"
+          value={task}
           onChange={handleChange}
         />
         <button
@@ -70,8 +83,19 @@ function UseReducerTodos() {
                 key={todo.id}
                 className="flex items-center gap-2 bg-indigo-100 p-4 rounded-lg"
               >
-                <input type="checkbox" />
-                <p className="grow-[1]">{todo.task}</p>
+                <input
+                  type="checkbox"
+                  onChange={() => {
+                    handleUpdate(todo.id);
+                  }}
+                />
+                <p
+                  className={`grow-[1] ${
+                    todo.isCompleted ? "line-through" : ""
+                  }`}
+                >
+                  {todo.task}
+                </p>
                 <button
                   className="bg-red-500 hover:bg-red-700 py-2 px-4 flex items-center justify-center text-white font-bold rounded-lg"
                   onClick={() => {
