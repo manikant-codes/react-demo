@@ -19,62 +19,62 @@ function PricingRowCard(props) {
       <ul className="flex flex-col gap-2">
         <li
           className={`flex items-center gap-2  ${
-            props.one ? "" : "line-through"
+            props.features.one ? "" : "line-through"
           }`}
         >
-          {/* <FontAwesomeIcon icon={props.features.one ? faCheck : faXmark} /> */}
-          <FontAwesomeIcon
+          <FontAwesomeIcon icon={props.features.one ? faCheck : faXmark} />
+          {/* <FontAwesomeIcon
             icon={props.one ? faCheck : faXmark}
             className={`${props.one ? "text-green-600" : "text-red-600"}`}
-          />
+          /> */}
           <p>Quam adipiscing vitae proin</p>
         </li>
         <li
           className={`flex items-center gap-2  ${
-            props.two ? "" : "line-through"
+            props.features.two ? "" : "line-through"
           }`}
         >
-          {/* <FontAwesomeIcon icon={props.features.two ? faCheck : faXmark} /> */}
-          <FontAwesomeIcon
+          <FontAwesomeIcon icon={props.features.two ? faCheck : faXmark} />
+          {/* <FontAwesomeIcon
             icon={props.two ? faCheck : faXmark}
             className={`${props.two ? "text-green-600" : "text-red-600"}`}
-          />
+          /> */}
           <p>Quam adipiscing vitae proin</p>
         </li>
         <li
           className={`flex items-center gap-2  ${
-            props.three ? "" : "line-through"
+            props.features.three ? "" : "line-through"
           }`}
         >
-          {/* <FontAwesomeIcon icon={props.features.three ? faCheck : faXmark} /> */}
-          <FontAwesomeIcon
+          <FontAwesomeIcon icon={props.features.three ? faCheck : faXmark} />
+          {/* <FontAwesomeIcon
             icon={props.three ? faCheck : faXmark}
             className={`${props.three ? "text-green-600" : "text-red-600"}`}
-          />
+          /> */}
           <p>Quam adipiscing vitae proin</p>
         </li>
         <li
           className={`flex items-center gap-2  ${
-            props.four ? "" : "line-through"
+            props.features.four ? "" : "line-through"
           }`}
         >
-          {/* <FontAwesomeIcon icon={props.features.four ? faCheck : faXmark} /> */}
-          <FontAwesomeIcon
+          <FontAwesomeIcon icon={props.features.four ? faCheck : faXmark} />
+          {/* <FontAwesomeIcon
             icon={props.four ? faCheck : faXmark}
             className={`${props.four ? "text-green-600" : "text-red-600"}`}
-          />
+          /> */}
           <p>Quam adipiscing vitae proin</p>
         </li>
         <li
           className={`flex items-center gap-2  ${
-            props.five ? "" : "line-through"
+            props.features.five ? "" : "line-through"
           }`}
         >
-          {/* <FontAwesomeIcon icon={props.features.five ? faCheck : faXmark} /> */}
-          <FontAwesomeIcon
+          <FontAwesomeIcon icon={props.features.five ? faCheck : faXmark} />
+          {/* <FontAwesomeIcon
             icon={props.five ? faCheck : faXmark}
             className={`${props.five ? "text-green-600" : "text-red-600"}`}
-          />
+          /> */}
           <p>Quam adipiscing vitae proin</p>
         </li>
       </ul>
