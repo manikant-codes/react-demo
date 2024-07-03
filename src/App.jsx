@@ -12,6 +12,7 @@ import UseReducerTodos from "./pages/UseReducerTodos";
 import ReduxDemo from "./pages/ReduxDemo";
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import ReduxCakeShop from "./pages/ReduxCakeShop";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="useReducerTodos" element={<UseReducerTodos />} />
             <Route path="redux" element={<ReduxDemo />} />
           </Route>
+          <Route path="reduxCakeShop" element={<ReduxCakeShop />} />
         </Routes>
       </BrowserRouter>
     </Provider>

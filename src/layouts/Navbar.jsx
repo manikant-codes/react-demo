@@ -36,6 +36,9 @@ function Navbar() {
         <li>
           <Link to="/redux">Redux</Link>
         </li>
+        <li>
+          <Link to="/reduxCakeShop">Redux Cake Shop</Link>
+        </li>
       </ul>
     </nav>
   );
