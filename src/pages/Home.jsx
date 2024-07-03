@@ -1,23 +1,36 @@
 import React from "react";
-import Footer from "../layouts/Footer";
-import HeroImage from "../components/home/HeroImage";
-import Navbar from "../layouts/Navbar";
+import Carousel from "../components/home/carousel/Carousel";
 import InfoRow from "../components/home/InfoRow";
-import ServicesRow from "../components/home/servicesRow/ServicesRow";
+import CounterRow from "../components/home/counterRow/CounterRow";
 import PricingRow from "../components/home/pricingRow/PricingRow";
 import ProgressRow from "../components/home/progressRow/ProgressRow";
-import ServicesRowMap from "../components/home/servicesRow/ServicesRowMap";
-import ProgressRowMap from "../components/home/progressRow/ProgressRowMap";
-import PricingRowMap from "../components/home/pricingRow/PricingRowMap";
-import CounterRow from "../components/home/counterRow/CounterRow";
+import ServicesRow from "../components/home/servicesRow/ServicesRow";
+
+const slidesData = [
+  {
+    id: 1,
+    img: "https://images.unsplash.com/photo-1469755785741-720ca0c526a6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "",
+  },
+  {
+    id: 2,
+    img: "https://images.unsplash.com/photo-1500087326943-dcabb70c026f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "",
+  },
+  {
+    id: 3,
+    img: "https://images.unsplash.com/photo-1616702678571-ee1b5c405cc6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "",
+  },
+];
 
 function Home() {
   const showOurStory = true;
   return (
     <>
-      <HeroImage
+      <Carousel
         title="Indigo"
-        img="https://images.unsplash.com/photo-1616702678571-ee1b5c405cc6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        slidesData={slidesData}
         desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, minima!"
       />
       <InfoRow
