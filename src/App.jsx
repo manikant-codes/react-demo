@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import UseStateIntro from "./components/demo/UseStateIntro";
+import List from "./components/demo/viewsDemo/List";
 
 function App() {
   return (
@@ -12,11 +13,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          {/* <Route index element={<UseStateIntro />} /> */}
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Route>
+        <Route path="use-state-intro" element={<UseStateIntro />} />
+        <Route path="view-demo" element={<List />} />
       </Routes>
     </BrowserRouter>
   );
