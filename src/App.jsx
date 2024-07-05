@@ -1,11 +1,9 @@
-import Events from "./components/demo/Events";
-// import Conditional from "./pages/Conditional";
-// import Home from "./pages/Home";
+import Gallery from "./components/demo/gallery/Gallery";
 
 function App() {
   return (
     <>
-      <Events />
+      <Gallery showList />
     </>
   );
 }
