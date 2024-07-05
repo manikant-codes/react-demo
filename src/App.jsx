@@ -12,7 +12,9 @@ import UseReducerTodos from "./pages/UseReducerTodos";
 import ReduxDemo from "./pages/ReduxDemo";
 import { Provider } from "react-redux";
 import store from "./redux/store";
-import ReduxCakeShop from "./pages/ReduxCakeShop";
+import CakeShop from "./pages/cakeShop/CakeShop";
+import CakeDetails from "./pages/cakeShop/CakeDetails";
+import CakeShopLayout from "./pages/cakeShop/layouts/CakeShopLayout";
 
 function App() {
   return (
@@ -31,7 +33,10 @@ function App() {
             <Route path="useReducerTodos" element={<UseReducerTodos />} />
             <Route path="redux" element={<ReduxDemo />} />
           </Route>
-          <Route path="reduxCakeShop" element={<ReduxCakeShop />} />
+          <Route path="/" element={<CakeShopLayout />}>
+            <Route path="cakeShop" element={<CakeShop />} />
+            <Route path="cakeDetails/:id" element={<CakeDetails />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </Provider>
