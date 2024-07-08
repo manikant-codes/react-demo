@@ -14,7 +14,7 @@ function AccordionSingleItem(props) {
         </p>
         <button
           onClick={() => {
-            props.showHideFaq(props.faq.id);
+            props.setVisibleFaqId(props.faq.id);
           }}
         >
           {showFaq ? (

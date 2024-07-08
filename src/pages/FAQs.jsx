@@ -1,7 +1,5 @@
 import React from "react";
 import PageTitle from "../components/common/PageTitle";
-import AccordionItem from "../components/faqs/AccordionItem";
-import Accordion from "../components/faqs/Accordion";
 import AccordionSingleVisible from "../components/faqs/AccordionSingleVisible";
 
 function FAQs() {

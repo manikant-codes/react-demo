@@ -7,6 +7,7 @@ import NotFound from "./pages/NotFound";
 import UseStateIntro from "./components/demo/UseStateIntro";
 import List from "./components/demo/viewsDemo/List";
 import FAQs from "./pages/FAQs";
+import Work from "./pages/Work";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="faqs" element={<FAQs />} />
+          <Route path="work" element={<Work />} />
           <Route path="*" element={<NotFound />} />
         </Route>
         <Route path="use-state-intro" element={<UseStateIntro />} />
