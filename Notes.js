@@ -1,4 +1,6 @@
+// ----------------------------------------------------------------
 // React Rouetr DOM
+// ----------------------------------------------------------------
 
 // Step 1:
 // React router dom package install karna hai.
@@ -24,3 +26,7 @@
 // Step 3:
 // Fir un page pe jane ke liye <Link to=""></Link> component ka use karna hai.
 // Ise to prop me page ka path dena hai. Jo path aap ne app me define kiya hai us page ke liye wo path to prop me dena hai.
+
+// Common Layout
+// ----------------------------------------------------------------
+// Agar common layout rakhna hoo to fir <Routes></Routes> ke baad <Route></Route> component ke andar baki ke routes rakhne hain.

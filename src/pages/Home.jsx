@@ -1,17 +1,14 @@
 import React from "react";
-import Footer from "../components/common/Footer";
 import HeroImage from "../components/home/HeroImage";
-import Navbar from "../components/common/Navbar";
 import InfoRow from "../components/home/infoRow/InfoRow";
-import ServicesRow from "../components/home/servicesRow/ServicesRow";
 import PricingRow from "../components/home/pricingRow/PricingRow";
 import ProgressRow from "../components/home/progressRow/ProgressRow";
+import ServicesRow from "../components/home/servicesRow/ServicesRow";
 
 function Home() {
   const showOurStory = true;
   return (
     <div>
-      <Navbar />
       <HeroImage />
       <InfoRow
         title="About Us"
@@ -35,7 +32,6 @@ function Home() {
       <ProgressRow />
       <ServicesRow />
       <PricingRow />
-      <Footer />
     </div>
   );
 }
